@@ -33,12 +33,12 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
-  # Enable the GNOME Display Manager.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-
   # Exclude XTerm
   services.xserver.excludePackages = [pkgs.xterm];
+
+  # Enable the GNOME Display Manager and GNOME Desktop Environment.
+  services.xserver.displayManager.gdm.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
 
   # Exclude some GNOME packages
   environment.gnome.excludePackages = with pkgs; [
@@ -62,6 +62,7 @@
     gnome.gnome-calendar
   ];
 
+  # Fix multi-monitor refresh rates with X11
   environment.sessionVariables = {
     __GL_SYNC_DISPLAY_DEVICE = "DP-0";
   };
@@ -73,22 +74,11 @@
     driSupport32Bit = true;
   };
 
-  # Tell Xorg to use the nvidia driver (also valid for Wayland)
+  # Use NVIDIA drivers
   services.xserver.videoDrivers = ["nvidia"];
-
   hardware.nvidia = {
-    # Modesetting is needed for most Wayland compositors
     modesetting.enable = true;
-
-    # Use the open source version of the kernel module
-    # Only available on driver 515.43.04+
-    open = false;
-
-    # Enable the nvidia settings menu
     nvidiaSettings = true;
-
-    # Optionally, you may need to select the appropriate driver version for your specific GPU.
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
   # Enable CUPS to print documents.
