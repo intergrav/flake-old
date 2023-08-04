@@ -11,10 +11,6 @@
       url = "github:rafaelmardojai/firefox-gnome-theme";
       flake = false;
     };
-    static = {
-      url = "path:./static";
-      flake = false;
-    };
   };
 
   outputs = {
