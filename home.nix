@@ -36,6 +36,7 @@
         "appindicatorsupport@rgcjonas.gmail.com"
         "clipboard-history@alexsaveau.dev"
         "panel-corners@aunetx"
+        "rounded-window-corners@yilozt"
         "replaceActivitiesText@pratap.fastmail.fm"
       ];
     };
@@ -46,7 +47,7 @@
       clock-format = "12h";
     };
     "org/gnome/shell/extensions/replaceActivitiesText" = {
-      icon-path = "/home/devin/Pictures/Backgrounds/nix-snowflake.svg";
+      icon-path = "~/Pictures/Backgrounds/nix-snowflake.svg";
       text = "Activities";
       icon-size = 1.05;
     };
