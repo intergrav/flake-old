@@ -1,0 +1,1 @@
+These are my configurations for NixOS, I'm very new to using flakes so it may be rough around the edges!
