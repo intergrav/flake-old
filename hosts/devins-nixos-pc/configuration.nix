@@ -16,31 +16,25 @@
     };
   };
 
-  # Bootloader.
+  # Bootloader
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # Enable networking
+  # Networking
   networking.networkmanager.enable = true;
   networking.hostName = "devins-nixos-pc";
 
-  # Set your time zone.
+  # Time zone
   time.timeZone = "America/Nassau";
 
-  # Select internationalisation properties.
+  # Internationalization
   i18n.defaultLocale = "en_US.UTF-8";
 
-  # Enable the X11 windowing system.
+  # X11 and GNOME settings
   services.xserver.enable = true;
-
-  # Exclude XTerm
   services.xserver.excludePackages = [pkgs.xterm];
-
-  # Enable the GNOME Display Manager and GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
-
-  # Exclude some GNOME packages
   environment.gnome.excludePackages = with pkgs; [
     gnome-photos
     gnome-tour
@@ -67,24 +61,22 @@
     __GL_SYNC_DISPLAY_DEVICE = "DP-0";
   };
 
-  # Make sure OpenGL is enabled
+  # OpenGL and NVIDIA settings
   hardware.opengl = {
     enable = true;
     driSupport = true;
     driSupport32Bit = true;
   };
-
-  # Use NVIDIA drivers
   services.xserver.videoDrivers = ["nvidia"];
   hardware.nvidia = {
     modesetting.enable = true;
     nvidiaSettings = true;
   };
 
-  # Enable CUPS to print documents.
+  # CUPS for printing
   services.printing.enable = true;
 
-  # Enable sound with pipewire.
+  # Sound with Pipewire
   sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -95,7 +87,7 @@
     pulse.enable = true;
   };
 
-  # Define a user account.
+  # Define a user account
   users.users.devin = {
     isNormalUser = true;
     description = "Devin";
@@ -103,23 +95,20 @@
     packages = with pkgs; [];
   };
 
-  # Allow unfree packages.
+  # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # Experimental features.
+  # Enable experimental features
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
-  # List packages installed in system profile.
+  # List packages installed in the system profile
   environment.systemPackages = with pkgs; [
-    # CLI, libraries
     nano
     git
     gh
     neofetch
     just
     alejandra
-
-    # Applications
     (vscode-with-extensions.override {
       vscodeExtensions = with vscode-extensions; [
         bbenoist.nix
@@ -134,8 +123,6 @@
     vlc
     prismlauncher
     cider
-
-    # Miscellaneous
     gnomeExtensions.appindicator
     gnomeExtensions.alphabetical-app-grid
     gnomeExtensions.clipboard-history
@@ -144,11 +131,6 @@
     gnomeExtensions.replace-activities-text
   ];
 
-  # This value determines the NixOS release from which the default
-  # settings for stateful data, like file locations and database versions
-  # on your system were taken. It‘s perfectly fine and recommended to leave
-  # this value at the release version of the first install of this system.
-  # Before changing this value read the documentation for this option
-  # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
+  # NixOS release version
   system.stateVersion = "23.05";
 }

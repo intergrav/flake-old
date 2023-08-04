@@ -4,7 +4,7 @@
   inputs,
   ...
 }: {
-  # Home Manager needs a bit of information about you and paths.
+  # Home Manager needs information about you and paths
   home.username = "devin";
   home.homeDirectory = "/home/devin";
 
@@ -36,25 +36,23 @@
   };
 
   # Other GNOME settings
-  dconf.settings = {
-    "org/gnome/desktop/interface" = {
-      color-scheme = "prefer-dark";
-      enable-hot-corners = false;
-      clock-format = "12h";
-      font-hinting = "slight";
-      font-antialiasing = "grayscale";
-    };
-    "org/gnome/mutter" = {
-      edge-tiling = true;
-      dynamic-workspaces = true;
-      workspaces-only-on-primary = true;
-    };
-    "org/gnome/desktop/wm/preferences" = {
-      titlebar-font = "Cantarell 11";
-    };
-    "org/gtk/settings/file-chooser" = {
-      clock-format = "12h";
-    };
+  dconf.settings."org/gnome/desktop/interface" = {
+    color-scheme = "prefer-dark";
+    enable-hot-corners = false;
+    clock-format = "12h";
+    font-hinting = "slight";
+    font-antialiasing = "grayscale";
+  };
+  dconf.settings."org/gnome/mutter" = {
+    edge-tiling = true;
+    dynamic-workspaces = true;
+    workspaces-only-on-primary = true;
+  };
+  dconf.settings."org/gnome/desktop/wm/preferences" = {
+    titlebar-font = "Cantarell 11";
+  };
+  dconf.settings."org/gtk/settings/file-chooser" = {
+    clock-format = "12h";
   };
 
   # GTK settings
@@ -94,15 +92,9 @@
     };
   };
 
-  # This value determines the Home Manager release that your configuration is
-  # compatible with. This helps avoid breakage when a new Home Manager release
-  # introduces backwards incompatible changes.
-  #
-  # You should not change this value, even if you update Home Manager. If you do
-  # want to update the value, then make sure to first check the Home Manager
-  # release notes.
+  # Home Manager release version
   home.stateVersion = "22.11";
 
-  # Let Home Manager install and manage itself.
+  # Let Home Manager install and manage itself
   programs.home-manager.enable = true;
 }
