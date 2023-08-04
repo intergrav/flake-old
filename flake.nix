@@ -1,5 +1,5 @@
 {
-  description = "Devin's Nix Flake, with some help from Vimjoyer's NixOS videos";
+  description = "Devin's Nix Flake, with some help from Vimjoyer's NixOS videos and other cool people";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -30,7 +30,7 @@
       devins-nixos-pc = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs system;};
         modules = [
-          ./configuration.nix
+          ./hosts/devins-nixos-pc/configuration.nix
         ];
       };
     };
