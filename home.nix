@@ -8,6 +8,7 @@
   home.username = "devin";
   home.homeDirectory = "/home/devin";
 
+  # GNOME and extension settings
   dconf.settings = {
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
@@ -51,6 +52,7 @@
     };
   };
 
+  # GTK settings
   gtk = {
     enable = true;
     theme = {
@@ -59,12 +61,14 @@
     };
   };
 
+  # Git settings
   programs.git = {
     enable = true;
     userName = "intergrav";
     userEmail = "intergrav@proton.me";
   };
 
+  # Firefox settings
   home.file.".mozilla/firefox/nix-user-profile/chrome/firefox-gnome-theme".source = inputs.firefox-gnome-theme;
 
   programs.firefox = {
@@ -77,7 +81,7 @@
         @import "firefox-gnome-theme/userContent.css";
       '';
       settings = {
-        "toolkit.legacyUserProfileCustomizations.stylesheets" = true; # Enable customChrome.cs
+        "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
         "browser.uidensity" = 0;
         "svg.context-properties.content.enabled" = true;
         "browser.theme.dark-private-windows" = false;
