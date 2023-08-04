@@ -8,20 +8,8 @@
   home.username = "devin";
   home.homeDirectory = "/home/devin";
 
-  # GNOME and extension settings
+  # GNOME shell and extension settings
   dconf.settings = {
-    "org/gnome/desktop/interface" = {
-      color-scheme = "prefer-dark";
-      enable-hot-corners = false;
-      clock-format = "12h";
-      font-hinting = "slight";
-      font-antialiasing = "grayscale";
-    };
-    "org/gnome/mutter" = {
-      edge-tiling = true;
-      dynamic-workspaces = true;
-      workspaces-only-on-primary = true;
-    };
     "org/gnome/shell" = {
       favorite-apps = [
         "org.gnome.Console.desktop"
@@ -40,16 +28,32 @@
         "replaceActivitiesText@pratap.fastmail.fm"
       ];
     };
+    "org/gnome/shell/extensions/replaceActivitiesText" = {
+      icon-path = "/home/devin/Pictures/Backgrounds/nix-snowflake.svg";
+      text = "Activities";
+      icon-size = 1.05;
+    };
+  };
+
+  # Other GNOME settings
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+      enable-hot-corners = false;
+      clock-format = "12h";
+      font-hinting = "slight";
+      font-antialiasing = "grayscale";
+    };
+    "org/gnome/mutter" = {
+      edge-tiling = true;
+      dynamic-workspaces = true;
+      workspaces-only-on-primary = true;
+    };
     "org/gnome/desktop/wm/preferences" = {
       titlebar-font = "Cantarell 11";
     };
     "org/gtk/settings/file-chooser" = {
       clock-format = "12h";
-    };
-    "org/gnome/shell/extensions/replaceActivitiesText" = {
-      icon-path = "/home/devin/Pictures/Backgrounds/nix-snowflake.svg";
-      text = "Activities";
-      icon-size = 1.05;
     };
   };
 
