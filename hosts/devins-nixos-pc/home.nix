@@ -29,13 +29,13 @@
       ];
     };
     "org/gnome/shell/extensions/replaceActivitiesText" = {
-      icon-path = "/home/devin/Pictures/Backgrounds/nix-snowflake.svg";
+      icon-path = "file://" + ./../../static/nix-snowflake.svg;
       text = "Activities";
       icon-size = 1.05;
     };
     "org/gnome/desktop/background" = {
-      picture-uri = "/home/devin/Pictures/static/wallpapers/nix-nineish.png";
-      picture-uri-dark = "/home/devin/Pictures/static/wallpapers/nix-nineish-dark-gray.png";
+      picture-uri = "file://" + ./../../static/wallpapers/nix-nineish.png;
+      picture-uri-dark = "file://" + ./../../static/wallpapers/nix-nineish-dark-gray.png;
     };
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
