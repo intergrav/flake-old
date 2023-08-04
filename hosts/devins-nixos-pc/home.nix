@@ -56,12 +56,10 @@
   };
 
   # GTK settings
-  gtk = {
-    enable = true;
-    theme = {
-      name = "adw-gtk3-dark";
-      package = pkgs.adw-gtk3;
-    };
+  gtk.enable = true;
+  gtk.theme = {
+    name = "adw-gtk3-dark";
+    package = pkgs.adw-gtk3;
   };
 
   # Git settings
@@ -76,7 +74,7 @@
 
   programs.firefox = {
     enable = true;
-    profiles.nix-user-profile = {
+    profiles."nix-user-profile" = {
       userChrome = ''
         @import "firefox-gnome-theme/userChrome.css";
       '';
