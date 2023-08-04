@@ -25,13 +25,7 @@
         "clipboard-history@alexsaveau.dev"
         "panel-corners@aunetx"
         "rounded-window-corners@yilozt"
-        "replaceActivitiesText@pratap.fastmail.fm"
       ];
-    };
-    "org/gnome/shell/extensions/replaceActivitiesText" = {
-      icon-path = "file://" + ./../../static/nix-snowflake.svg;
-      text = "Activities";
-      icon-size = 1.05;
     };
     "org/gnome/desktop/background" = {
       picture-uri = "file://" + ./../../static/wallpapers/nix-nineish.png;

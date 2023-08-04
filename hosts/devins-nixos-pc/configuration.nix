@@ -139,7 +139,6 @@
     gnomeExtensions.clipboard-history
     gnomeExtensions.panel-corners
     gnomeExtensions.rounded-window-corners
-    gnomeExtensions.replace-activities-text
   ];
 
   # NixOS release version
