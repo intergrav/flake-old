@@ -101,26 +101,39 @@
 
   # List packages installed in the system profile
   environment.systemPackages = with pkgs; [
+    # Text editing and code versioning tools
     nano
     git
     gh
-    neofetch
-    just
-    alejandra
     (vscode-with-extensions.override {
       vscodeExtensions = with vscode-extensions; [
         bbenoist.nix
         kamadorueda.alejandra
       ];
     })
+
+    # System information and configuration tools
+    neofetch
+    alejandra
+
+    # Command runners and automation tools
+    just
+
+    # Messaging and community apps
     (discord.override {
       withOpenASAR = true;
       withVencord = true;
     })
+
+    # Web browsing and media playback tools
     firefox
     vlc
     prismlauncher
+
+    # Tools for software development
     cider
+
+    # GNOME extensions for UX and UI improvement
     gnomeExtensions.appindicator
     gnomeExtensions.alphabetical-app-grid
     gnomeExtensions.clipboard-history
