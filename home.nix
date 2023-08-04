@@ -47,7 +47,7 @@
       clock-format = "12h";
     };
     "org/gnome/shell/extensions/replaceActivitiesText" = {
-      icon-path = "~/Pictures/Backgrounds/nix-snowflake.svg";
+      icon-path = "/home/devin/Pictures/Backgrounds/nix-snowflake.svg";
       text = "Activities";
       icon-size = 1.05;
     };
