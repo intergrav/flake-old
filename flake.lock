@@ -56,7 +56,21 @@
       "inputs": {
         "firefox-gnome-theme": "firefox-gnome-theme",
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "static": "static"
+      }
+    },
+    "static": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1,
+        "narHash": "sha256-lM5bVsFg1FDgX6xVJeLa4v8WzF8mvoZHsx/liX5Wuxg=",
+        "path": "./static",
+        "type": "path"
+      },
+      "original": {
+        "path": "./static",
+        "type": "path"
       }
     }
   },
