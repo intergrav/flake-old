@@ -27,6 +27,13 @@
         "rounded-window-corners@yilozt"
       ];
     };
+    "org/gnome/nautilus/list-view" = {
+      default-folder-viewer = "list-view";
+      use-tree-view = true;
+    };
+    "org/gnome/nautilus/default-zoom-level" = {
+      default-folder-viewer = "small";
+    };
     "org/gnome/desktop/background" = {
       picture-uri = "file://" + ./../../static/wallpapers/nix-nineish.png;
       picture-uri-dark = "file://" + ./../../static/wallpapers/nix-nineish-dark-gray.png;
@@ -48,6 +55,7 @@
     };
     "org/gtk/settings/file-chooser" = {
       clock-format = "12h";
+      sort-directories-first = true;
     };
   };
 
