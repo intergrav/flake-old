@@ -118,6 +118,7 @@
     gh
     (vscode-with-extensions.override {
       vscodeExtensions = with vscode-extensions; [
+        vscode-extensions.piousdeer.adwaita-theme
         bbenoist.nix
         kamadorueda.alejandra
       ];
