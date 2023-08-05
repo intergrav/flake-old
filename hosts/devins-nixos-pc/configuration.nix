@@ -129,9 +129,10 @@
     firefox
     vlc
     prismlauncher
+    cider
 
     # Tools for software development
-    cider
+    go
 
     # GNOME extensions for UX and UI improvement
     gnomeExtensions.appindicator
