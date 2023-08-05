@@ -118,6 +118,7 @@
 
     # Command runners and automation tools
     just
+    gnumake
 
     # Messaging and community apps
     (discord.override {
