@@ -99,6 +99,17 @@
   # Enable experimental features
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
+  # Enable garnix thing
+  nix.settings = {
+    trusted-substituters = [
+      "https://cache.garnix.io"
+    ];
+
+    trusted-public-keys = [
+      "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g="
+    ];
+  };
+
   # List packages installed in the system profile
   environment.systemPackages = with pkgs; [
     # Text editing and code versioning tools
