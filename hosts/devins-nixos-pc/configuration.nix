@@ -134,7 +134,6 @@
 
     # Tools for software development
     go
-    packwiz
 
     # GNOME extensions for UX and UI improvement
     gnomeExtensions.appindicator
