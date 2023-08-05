@@ -33,7 +33,7 @@
         {
           nixpkgs.overlays = [getchoo.overlays.default];
           environment.systemPackages = with pkgs; [
-            treefetch
+            theseus
           ];
         }
       ];
