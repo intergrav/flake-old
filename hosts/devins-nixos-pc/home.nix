@@ -8,11 +8,6 @@
   home.username = "devin";
   home.homeDirectory = "/home/devin";
 
-  # Path
-  home.sessionPath = [
-    "$HOME/go/bin"
-  ];
-
   # GNOME shell and extension settings
   dconf.settings = {
     "org/gnome/shell" = {
