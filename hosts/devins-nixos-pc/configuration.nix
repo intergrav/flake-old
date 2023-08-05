@@ -123,6 +123,9 @@
       ];
     })
 
+    # Compatibility tools
+    bottles
+
     # System information and configuration tools
     neofetch
     alejandra
