@@ -7,7 +7,6 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    getchoo.url = "github:getchoo/nix-exprs";
     firefox-gnome-theme = {
       url = "github:rafaelmardojai/firefox-gnome-theme";
       flake = false;
@@ -17,7 +16,6 @@
   outputs = {
     self,
     nixpkgs,
-    getchoo,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -29,14 +27,6 @@
     };
   in {
     nixosConfigurations = {
-      modules = [
-        {
-          nixpkgs.overlays = [getchoo.overlays.default];
-          environment.systemPackages = with pkgs; [
-            theseus
-          ];
-        }
-      ];
       devins-nixos-pc = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs system;};
         modules = [
