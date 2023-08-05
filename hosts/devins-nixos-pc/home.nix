@@ -34,6 +34,10 @@
     "org/gnome/nautilus/default-zoom-level" = {
       default-folder-viewer = "small";
     };
+    "org/gnome/settings-daemon/plugins/power" = {
+      power-button-action = "interactive";
+      sleeping-inactive-ac-type = "nothing";
+    };
     "org/gnome/desktop/background" = {
       picture-uri = "file://" + ./../../static/wallpapers/nix-nineish.png;
       picture-uri-dark = "file://" + ./../../static/wallpapers/nix-nineish-dark-gray.png;
