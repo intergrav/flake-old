@@ -152,7 +152,6 @@
     gnomeExtensions.clipboard-history
     gnomeExtensions.panel-corners
     gnomeExtensions.rounded-window-corners
-    gnomeExtensions.pop-shell
   ];
 
   # NixOS release version
