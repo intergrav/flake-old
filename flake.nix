@@ -17,21 +17,16 @@
     self,
     nixpkgs,
     ...
-  } @ inputs: let
-    system = "x86_64-linux";
-    pkgs = import nixpkgs {
-      inherit system;
-      config = {
-        allowUnfree = true;
-      };
-    };
-  in {
+  } @ inputs: {
     nixosConfigurations = {
       devins-nixos-pc = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs system;};
         modules = [
           ./hosts/devins-nixos-pc/configuration.nix
         ];
+        specialArgs = {
+          inherit inputs;
+          system = "x86_64-linux";
+        };
       };
     };
   };
