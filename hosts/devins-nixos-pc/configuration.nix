@@ -129,6 +129,8 @@
       withOpenASAR = true;
       withVencord = true;
     })
+    gtkcord4 # gtk Discord client
+    fractal-next
 
     # Web browsing and media playback tools
     firefox
