@@ -16,6 +16,7 @@
         "org.gnome.Nautilus.desktop"
         "firefox.desktop"
         "discord.desktop"
+        "cider.desktop"
         "code.desktop"
         "com.usebottles.bottles.desktop"
       ];
