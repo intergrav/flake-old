@@ -117,9 +117,6 @@
     vlc
     prismlauncher
 
-    # Tools for software development
-    go
-
     # GNOME extensions for UX and UI improvement
     gnomeExtensions.appindicator
     gnomeExtensions.alphabetical-app-grid
