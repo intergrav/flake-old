@@ -17,6 +17,7 @@
         "firefox.desktop"
         "discord.desktop"
         "code.desktop"
+        "com.usebottles.bottles.desktop"
       ];
       disable-user-extensions = false;
       enabled-extensions = [
