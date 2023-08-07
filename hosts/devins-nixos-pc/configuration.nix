@@ -27,9 +27,6 @@
   # Time zone
   time.timeZone = "America/Nassau";
 
-  # Internationalization
-  i18n.defaultLocale = "en_US.UTF-8";
-
   # X11 and GNOME settings
   services.xserver.enable = true;
   services.xserver.excludePackages = [pkgs.xterm];
