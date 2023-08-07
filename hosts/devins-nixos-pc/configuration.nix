@@ -132,8 +132,11 @@
     # Web browsing and media playback tools
     firefox
     vlc
-    prismlauncher
     cider
+    lollypop
+
+    # Games
+    prismlauncher
 
     # Tools for software development
     go
