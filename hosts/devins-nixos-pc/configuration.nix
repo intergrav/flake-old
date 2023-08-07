@@ -24,6 +24,9 @@
   networking.networkmanager.enable = true;
   networking.hostName = "devins-nixos-pc";
 
+  # Power management
+  powerManagement.cpuFreqGovernor = "ondemand";
+
   # Time zone
   time.timeZone = "America/Nassau";
 
@@ -59,13 +62,17 @@
   };
 
   # OpenGL and NVIDIA settings
-  hardware.opengl.enable = true;
-  hardware.opengl.driSupport = true;
-  hardware.opengl.driSupport32Bit = true;
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
+  };
   services.xserver.videoDrivers = ["nvidia"];
   hardware.nvidia = {
     modesetting.enable = true;
+    open = false;
     nvidiaSettings = true;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
   # CUPS for printing
