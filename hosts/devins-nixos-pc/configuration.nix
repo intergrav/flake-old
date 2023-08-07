@@ -66,6 +66,8 @@
 
   # Fix multi-monitor refresh rates with X11
   environment.sessionVariables = {
+    GBM_BACKEND = "nvidia-drm";
+    __GLX_VENDOR_LIBRARY_NAME = "nvidia";
     __GL_SYNC_DISPLAY_DEVICE = "DP-0";
   };
 
