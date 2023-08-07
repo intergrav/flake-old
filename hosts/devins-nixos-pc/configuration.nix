@@ -27,6 +27,14 @@
   # Power management
   powerManagement.cpuFreqGovernor = "ondemand";
 
+  # Storage things
+  nix.settings.auto-optimise-store = true;
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 7d";
+  };
+
   # Time zone
   time.timeZone = "America/Nassau";
 
