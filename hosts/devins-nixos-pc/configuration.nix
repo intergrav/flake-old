@@ -116,6 +116,7 @@
     # System information and configuration tools
     neofetch
     alejandra
+    easyeffects
 
     # Command runners and automation tools
     just
