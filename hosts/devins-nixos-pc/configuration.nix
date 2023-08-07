@@ -27,9 +27,6 @@
   # Time zone
   time.timeZone = "America/Nassau";
 
-  # Enable funni zram swap thingy
-  zramSwap.enable = true;
-
   # X11 and GNOME settings
   services.xserver.enable = true;
   services.xserver.excludePackages = [pkgs.xterm];
