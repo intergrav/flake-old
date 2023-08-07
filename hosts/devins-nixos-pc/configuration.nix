@@ -85,6 +85,7 @@
   # Define a user account
   users.users.devin = {
     isNormalUser = true;
+    initialPassword = "initialpw";
     description = "Devin";
     extraGroups = ["networkmanager" "wheel"];
     packages = with pkgs; [];
