@@ -19,7 +19,6 @@
         kamadorueda.alejandra
       ];
     })
-    bottles
     neofetch
     alejandra
     easyeffects
