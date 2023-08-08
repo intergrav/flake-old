@@ -116,7 +116,6 @@
 
   # List packages installed in the system profile
   environment.systemPackages = with pkgs; [
-    # Text editing and code versioning tools
     nano
     git
     gh
@@ -127,40 +126,23 @@
         kamadorueda.alejandra
       ];
     })
-
-    # Compatibility tools
     bottles
-
-    # System information and configuration tools
     neofetch
     alejandra
     easyeffects
-
-    # Command runners and automation tools
     just
     gnumake
-
-    # Messaging and community apps
     (discord.override {
       withOpenASAR = true;
       withVencord = true;
     })
-    gtkcord4 # gtk Discord client
     fractal-next
-
-    # Web browsing and media playback tools
     firefox
     vlc
     cider
     lollypop
-
-    # Games
     prismlauncher
-
-    # Tools for software development
     go
-
-    # GNOME extensions for UX and UI improvement
     gnomeExtensions.appindicator
     gnomeExtensions.alphabetical-app-grid
     gnomeExtensions.clipboard-history
