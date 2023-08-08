@@ -23,7 +23,7 @@
     })
     neofetch
     alejandra
-    gparted
+    obsidian
     easyeffects
     (discord.override {
       withOpenASAR = true;
