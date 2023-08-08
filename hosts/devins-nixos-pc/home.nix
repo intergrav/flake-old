@@ -12,6 +12,8 @@
   home.packages = with pkgs; [
     nano
     gh
+    just
+    gnumake
     (vscode-with-extensions.override {
       vscodeExtensions = with vscode-extensions; [
         vscode-extensions.piousdeer.adwaita-theme
@@ -21,9 +23,8 @@
     })
     neofetch
     alejandra
+    gparted
     easyeffects
-    just
-    gnumake
     (discord.override {
       withOpenASAR = true;
       withVencord = true;
