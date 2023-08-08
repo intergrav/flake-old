@@ -51,13 +51,19 @@
       font-hinting = "slight";
       font-antialiasing = "grayscale";
     };
+    "org/gnome/desktop/wm/preferences" = {
+      titlebar-font = "Cantarell 11";
+    };
+    "org/gnome/desktop/privacy" = {
+      remember-recent-files = false;
+      remove-old-temp-files = true;
+      remove-old-trash-files = true;
+      old-files-age = 2;
+    };
     "org/gnome/mutter" = {
       edge-tiling = true;
       dynamic-workspaces = true;
       workspaces-only-on-primary = true;
-    };
-    "org/gnome/desktop/wm/preferences" = {
-      titlebar-font = "Cantarell 11";
     };
     "org/gtk/settings/file-chooser" = {
       clock-format = "12h";
@@ -80,11 +86,11 @@
   };
 
   # Firefox settings
-  home.file.".mozilla/firefox/nix-user-profile/chrome/firefox-gnome-theme".source = inputs.firefox-gnome-theme;
+  home.file.".mozilla/firefox/devin/chrome/firefox-gnome-theme".source = inputs.firefox-gnome-theme;
 
   programs.firefox = {
     enable = true;
-    profiles."nix-user-profile" = {
+    profiles."devin" = {
       userChrome = ''
         @import "firefox-gnome-theme/userChrome.css";
       '';
