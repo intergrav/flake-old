@@ -28,15 +28,6 @@
           system = "x86_64-linux";
         };
       };
-      devins-nixos-laptop = nixpkgs.lib.nixosSystem {
-        modules = [
-          ./hosts/devins-nixos-laptop/configuration.nix
-        ];
-        specialArgs = {
-          inherit inputs;
-          system = "x86_64-linux";
-        };
-      };
     };
   };
 }
