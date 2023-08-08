@@ -10,7 +10,7 @@
   ];
 
   home-manager = {
-    extraSpecialArgs = {inherit inputs;};
+    extraSpecialArgs = {inherit inputs pkgs;};
     users = {
       devin = import ./home.nix;
     };
@@ -102,10 +102,7 @@
   # Define a user account
   users.users.devin = {
     isNormalUser = true;
-    initialPassword = "initialpw";
-    description = "Devin";
     extraGroups = ["networkmanager" "wheel"];
-    packages = with pkgs; [];
   };
 
   # Allow unfree packages
@@ -113,42 +110,6 @@
 
   # Enable experimental features
   nix.settings.experimental-features = ["nix-command" "flakes"];
-
-  # List packages installed in the system profile
-  environment.systemPackages = with pkgs; [
-    nano
-    git
-    gh
-    (vscode-with-extensions.override {
-      vscodeExtensions = with vscode-extensions; [
-        vscode-extensions.piousdeer.adwaita-theme
-        bbenoist.nix
-        kamadorueda.alejandra
-      ];
-    })
-    bottles
-    neofetch
-    alejandra
-    easyeffects
-    just
-    gnumake
-    (discord.override {
-      withOpenASAR = true;
-      withVencord = true;
-    })
-    fractal-next
-    firefox
-    vlc
-    cider
-    lollypop
-    prismlauncher
-    go
-    gnomeExtensions.appindicator
-    gnomeExtensions.alphabetical-app-grid
-    gnomeExtensions.clipboard-history
-    gnomeExtensions.panel-corners
-    gnomeExtensions.rounded-window-corners
-  ];
 
   # NixOS release version
   system.stateVersion = "23.05";

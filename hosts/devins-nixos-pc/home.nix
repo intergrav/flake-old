@@ -1,12 +1,47 @@
 {
+  inputs,
   config,
   pkgs,
-  inputs,
   ...
 }: {
   # Home Manager needs information about you and paths
   home.username = "devin";
   home.homeDirectory = "/home/devin";
+
+  # List of packages to install for me
+  home.packages = with pkgs; [
+    nano
+    git
+    gh
+    (vscode-with-extensions.override {
+      vscodeExtensions = with vscode-extensions; [
+        vscode-extensions.piousdeer.adwaita-theme
+        bbenoist.nix
+        kamadorueda.alejandra
+      ];
+    })
+    bottles
+    neofetch
+    alejandra
+    easyeffects
+    just
+    gnumake
+    (discord.override {
+      withOpenASAR = true;
+      withVencord = true;
+    })
+    fractal-next
+    vlc
+    cider
+    lollypop
+    prismlauncher
+    go
+    gnomeExtensions.appindicator
+    gnomeExtensions.alphabetical-app-grid
+    gnomeExtensions.clipboard-history
+    gnomeExtensions.panel-corners
+    gnomeExtensions.rounded-window-corners
+  ];
 
   # GNOME shell and extension settings
   dconf.settings = {
