@@ -11,7 +11,6 @@
   # List of packages to install for me
   home.packages = with pkgs; [
     nano
-    git
     gh
     (vscode-with-extensions.override {
       vscodeExtensions = with vscode-extensions; [
