@@ -32,7 +32,7 @@
     })
     fractal-next
     vlc
-    cider
+    spotify
     lollypop
     prismlauncher-qt5
     go
