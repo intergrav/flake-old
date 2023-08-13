@@ -33,6 +33,7 @@
     fractal-next
     vlc
     spotify
+    spicetify-cli
     lollypop
     prismlauncher-qt5
     go
