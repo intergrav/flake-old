@@ -34,7 +34,7 @@
     vlc
     cider
     lollypop
-    prismlauncher
+    prismlauncher-qt5
     go
     gnomeExtensions.appindicator
     gnomeExtensions.alphabetical-app-grid
