@@ -23,6 +23,7 @@
     })
     neofetch
     alejandra
+    firefox
     obsidian
     easyeffects
     (discord.override {
@@ -117,27 +118,6 @@
     enable = true;
     userName = "intergrav";
     userEmail = "intergrav@proton.me";
-  };
-
-  # Firefox settings
-  home.file.".mozilla/firefox/devin/chrome/firefox-gnome-theme".source = inputs.firefox-gnome-theme;
-
-  programs.firefox = {
-    enable = true;
-    profiles."devin" = {
-      userChrome = ''
-        @import "firefox-gnome-theme/userChrome.css";
-      '';
-      userContent = ''
-        @import "firefox-gnome-theme/userContent.css";
-      '';
-      settings = {
-        "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
-        "browser.uidensity" = 0;
-        "svg.context-properties.content.enabled" = true;
-        "browser.theme.dark-private-windows" = false;
-      };
-    };
   };
 
   # Home Manager release version
