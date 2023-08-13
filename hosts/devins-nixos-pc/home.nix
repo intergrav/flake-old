@@ -76,8 +76,8 @@
       sleeping-inactive-ac-type = "nothing";
     };
     "org/gnome/desktop/background" = {
-      picture-uri = "file://" + ./../../static/wallpapers/nix-nineish.png;
-      picture-uri-dark = "file://" + ./../../static/wallpapers/nix-nineish-dark-gray.png;
+      picture-uri = "https://raw.githubusercontent.com/NixOS/nixos-artwork/master/wallpapers/nix-wallpaper-nineish.src.svg";
+      picture-uri-dark = "https://raw.githubusercontent.com/NixOS/nixos-artwork/master/wallpapers/nix-wallpaper-nineish-dark-gray.svg";
     };
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";

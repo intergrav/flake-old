@@ -1,1 +1,0 @@
-This directory is meant for images like wallpapers and logos. These are used by my host configuration files.
