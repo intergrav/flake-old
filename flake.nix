@@ -7,11 +7,13 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    spicetify-nix.url = github:the-argus/spicetify-nix;
   };
 
   outputs = {
     self,
     nixpkgs,
+    spicetify-nix,
     ...
   } @ inputs: {
     nixosConfigurations = {
