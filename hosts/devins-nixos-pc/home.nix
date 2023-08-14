@@ -53,7 +53,7 @@
         "org.gnome.Nautilus.desktop"
         "firefox.desktop"
         "discord.desktop"
-        "cider.desktop"
+        "spotify.desktop"
         "code.desktop"
         "com.usebottles.bottles.desktop"
       ];
@@ -85,11 +85,13 @@
       color-scheme = "prefer-dark";
       enable-hot-corners = false;
       clock-format = "12h";
-      font-hinting = "slight";
+      font-hinting = "none";
       font-antialiasing = "grayscale";
+      font-name = "Inter 11";
+      document-font-name = "Inter 11";
     };
     "org/gnome/desktop/wm/preferences" = {
-      titlebar-font = "Cantarell 11";
+      titlebar-font = "Inter 11";
     };
     "org/gnome/desktop/privacy" = {
       remember-recent-files = false;
