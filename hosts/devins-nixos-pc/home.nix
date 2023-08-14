@@ -42,6 +42,7 @@
     gnomeExtensions.clipboard-history
     gnomeExtensions.panel-corners
     gnomeExtensions.rounded-window-corners
+    inter
   ];
 
   # GNOME shell and extension settings
