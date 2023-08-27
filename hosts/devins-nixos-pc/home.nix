@@ -31,6 +31,7 @@
       withVencord = true;
     })
     fractal-next
+    filezilla
     vlc
     spotify
     spicetify-cli
