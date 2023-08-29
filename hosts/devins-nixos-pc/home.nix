@@ -37,7 +37,6 @@
     lollypop
     prismlauncher-qt5
     go
-    gnomeExtensions.appindicator
     gnomeExtensions.alphabetical-app-grid
     gnomeExtensions.panel-corners
     gnomeExtensions.rounded-window-corners
@@ -59,7 +58,6 @@
       disable-user-extensions = false;
       enabled-extensions = [
         "AlphabeticalAppGrid@stuarthayhurst"
-        "appindicatorsupport@rgcjonas.gmail.com"
         "panel-corners@aunetx"
         "rounded-window-corners@yilozt"
       ];
