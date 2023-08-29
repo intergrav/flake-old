@@ -38,20 +38,37 @@
   # Time zone
   time.timeZone = "America/Nassau";
 
-  # X11 and Plasma settings
+  # X11 and GNOME settings
   services.xserver.enable = true;
   services.xserver.excludePackages = [pkgs.xterm];
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma5.enable = true;
+  services.xserver.displayManager.gdm.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
+  environment.gnome.excludePackages = with pkgs; [
+    gnome-photos
+    gnome-tour
+    gnome.yelp
+    gnome.cheese
+    gnome.gnome-music
+    gnome.gedit
+    gnome.epiphany
+    gnome.geary
+    gnome.evince
+    gnome.gnome-characters
+    gnome.totem
+    gnome.tali
+    gnome.iagno
+    gnome.hitori
+    gnome.atomix
+    gnome.gnome-contacts
+    gnome.gnome-maps
+    gnome.gnome-calendar
+  ];
 
-  # Set environment variables
+  # Fix multi-monitor refresh rates with X11
   environment.sessionVariables = {
+    __GL_SYNC_DISPLAY_DEVICE = "DP-0";
     NIXOS_OZONE_WL = "1";
-    KWIN_X11_REFRESH_RATE = "144000";
-    KWIN_X11_NO_SYNC_TO_VBLANK = "1";
-    KWIN_X11_FORCE_SOFTWARE_VSYNC = "1";
   };
-
   # OpenGL and NVIDIA settings
   hardware.opengl = {
     enable = true;
