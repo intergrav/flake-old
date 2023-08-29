@@ -36,6 +36,7 @@
     prismlauncher-qt5
     go
     inter
+    lightly-boehs
   ];
 
   # Git settings
