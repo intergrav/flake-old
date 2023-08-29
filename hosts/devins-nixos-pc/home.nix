@@ -39,7 +39,6 @@
     go
     gnomeExtensions.appindicator
     gnomeExtensions.alphabetical-app-grid
-    gnomeExtensions.clipboard-history
     gnomeExtensions.panel-corners
     gnomeExtensions.rounded-window-corners
     inter
@@ -61,7 +60,6 @@
       enabled-extensions = [
         "AlphabeticalAppGrid@stuarthayhurst"
         "appindicatorsupport@rgcjonas.gmail.com"
-        "clipboard-history@alexsaveau.dev"
         "panel-corners@aunetx"
         "rounded-window-corners@yilozt"
       ];
