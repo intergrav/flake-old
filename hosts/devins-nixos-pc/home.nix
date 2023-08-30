@@ -35,7 +35,7 @@
     spotify
     spicetify-cli
     lollypop
-    prismlauncher-qt5
+    prismlauncher
     go
     gnomeExtensions.alphabetical-app-grid
     gnomeExtensions.panel-corners
