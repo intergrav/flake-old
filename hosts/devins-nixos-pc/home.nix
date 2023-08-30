@@ -27,6 +27,7 @@
     obsidian
     easyeffects
     (discord.override {
+      withOpenASAR = true;
       withVencord = true;
     })
     fractal-next
