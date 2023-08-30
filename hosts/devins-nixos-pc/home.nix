@@ -84,11 +84,6 @@
       clock-format = "12h";
       font-hinting = "none";
       font-antialiasing = "grayscale";
-      font-name = "Inter 11";
-      document-font-name = "Inter 11";
-    };
-    "org/gnome/desktop/wm/preferences" = {
-      titlebar-font = "Inter 11";
     };
     "org/gnome/desktop/privacy" = {
       remember-recent-files = false;
