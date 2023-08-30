@@ -69,6 +69,7 @@
     __GL_SYNC_DISPLAY_DEVICE = "DP-0";
     NIXOS_OZONE_WL = "1";
   };
+
   # OpenGL and NVIDIA settings
   hardware.opengl = {
     enable = true;
