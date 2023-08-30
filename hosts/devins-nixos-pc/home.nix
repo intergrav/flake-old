@@ -82,8 +82,6 @@
       color-scheme = "prefer-dark";
       enable-hot-corners = false;
       clock-format = "12h";
-      font-hinting = "none";
-      font-antialiasing = "grayscale";
     };
     "org/gnome/desktop/privacy" = {
       remember-recent-files = false;
