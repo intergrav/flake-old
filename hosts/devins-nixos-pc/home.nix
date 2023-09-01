@@ -14,6 +14,7 @@
     gh
     just
     gnumake
+    blackbox-terminal
     (vscode-with-extensions.override {
       vscodeExtensions = with vscode-extensions; [
         vscode-extensions.catppuccin.catppuccin-vsc
