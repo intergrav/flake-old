@@ -25,14 +25,6 @@
   networking.networkmanager.enable = true;
   networking.hostName = "devins-nixos-pc";
 
-  # Storage things
-  nix.settings.auto-optimise-store = true;
-  nix.gc = {
-    automatic = true;
-    dates = "weekly";
-    options = "--delete-older-than 4d";
-  };
-
   # CPU go zoom or something, thanks for this little snippet getchoo :)
   boot.kernelParams = ["amd_pstate=active"];
   systemd.tmpfiles.rules = let
@@ -42,6 +34,19 @@
   in
     map rule (range 0 (nproc - 1));
   powerManagement.cpuFreqGovernor = "powersave";
+
+  # Nix settings - garbage collection, auto optimize store, etc
+  nix = {
+    gc = {
+      automatic = true;
+      dates = "3d";
+      options = "-d";
+    };
+    settings = {
+      auto-optimise-store = true;
+      experimental-features = ["nix-command" "flakes"];
+    };
+  };
 
   # Time zone
   time.timeZone = "America/Nassau";
@@ -114,9 +119,6 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
-  # Enable experimental features
-  nix.settings.experimental-features = ["nix-command" "flakes"];
 
   # NixOS release version
   system.stateVersion = "23.05";
