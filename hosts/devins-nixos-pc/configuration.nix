@@ -24,9 +24,6 @@
   networking.networkmanager.enable = true;
   networking.hostName = "devins-nixos-pc";
 
-  # Power management
-  powerManagement.cpuFreqGovernor = "ondemand";
-
   # Storage things
   nix.settings.auto-optimise-store = true;
   nix.gc = {
