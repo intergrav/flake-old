@@ -1,1 +1,3 @@
-These are my configurations for NixOS, I'm very new to using flakes so it may be rough around the edges! I'll work on improving stuff later.
+## hosts
+
+- devins-nixos-pc - my workstation, i do mostly everything here. i'll come up with a better hostname at some point
