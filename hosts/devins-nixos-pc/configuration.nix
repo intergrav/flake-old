@@ -2,6 +2,7 @@
   inputs,
   config,
   pkgs,
+  lib,
   ...
 }: {
   imports = [
@@ -31,6 +32,17 @@
     dates = "weekly";
     options = "--delete-older-than 4d";
   };
+
+  # CPU go zoom or something
+  # Thanks for this little snippet getchoo :)
+  boot.kernelParams = ["amd_pstate=active"];
+  systemd.tmpfiles.rules = let
+    inherit (builtins // lib) map range toString;
+    nproc = 12;
+    rule = n: "w /sys/devices/system/cpu/cpu${toString n}/cpufreq/energy_performance_preference - - - - ${"balance_performance"}";
+  in
+    map rule (range 0 (nproc - 1));
+  powerManagement.cpuFreqGovernor = "powersave";
 
   # Time zone
   time.timeZone = "America/Nassau";
