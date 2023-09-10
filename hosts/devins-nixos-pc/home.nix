@@ -39,6 +39,7 @@
     lollypop
     prismlauncher
     go
+    python311
     python311Packages.svgwrite
     gnomeExtensions.alphabetical-app-grid
     gnomeExtensions.panel-corners
