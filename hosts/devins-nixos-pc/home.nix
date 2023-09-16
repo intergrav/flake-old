@@ -34,7 +34,6 @@
     filezilla
     vlc
     spotify
-    spicetify-cli
     lollypop
     prismlauncher
     go
