@@ -35,7 +35,6 @@
     vlc
     spotify
     spot
-    lollypop
     prismlauncher
     go
     python311
