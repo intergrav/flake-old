@@ -29,7 +29,6 @@
     (discord.override {
       withVencord = true;
     })
-    fractal-next
     filezilla
     vlc
     spotify
