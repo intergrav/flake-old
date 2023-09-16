@@ -34,6 +34,7 @@
     filezilla
     vlc
     spotify
+    spot
     lollypop
     prismlauncher
     go
