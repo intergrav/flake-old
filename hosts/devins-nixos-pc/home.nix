@@ -24,7 +24,6 @@
     alejandra
     firefox
     obsidian
-    figma-linux
     grapejuice
     easyeffects
     (discord.override {
