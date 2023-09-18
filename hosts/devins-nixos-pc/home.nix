@@ -24,6 +24,7 @@
     alejandra
     firefox
     obsidian
+    grapejuice
     easyeffects
     (discord.override {
       withVencord = true;
