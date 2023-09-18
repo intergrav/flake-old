@@ -21,7 +21,6 @@
         kamadorueda.alejandra
       ];
     })
-    neofetch
     alejandra
     firefox
     obsidian
@@ -29,13 +28,10 @@
     (discord.override {
       withVencord = true;
     })
-    filezilla
     vlc
     spotify
-    spot
     prismlauncher
     go
-    python311
     gnomeExtensions.alphabetical-app-grid
     gnomeExtensions.panel-corners
     gnomeExtensions.rounded-window-corners
