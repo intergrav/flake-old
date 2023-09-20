@@ -62,7 +62,6 @@
     gnome-tour
     gnome.yelp
     gnome.cheese
-    gnome.gnome-music
     gnome.gedit
     gnome.epiphany
     gnome.geary
