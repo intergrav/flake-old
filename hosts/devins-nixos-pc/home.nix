@@ -34,8 +34,7 @@
     prismlauncher
     go
     gnomeExtensions.alphabetical-app-grid
-    gnomeExtensions.panel-corners
-    gnomeExtensions.rounded-window-corners
+    gnomeExtensions.blur-my-shell
     inter
   ];
 
@@ -53,8 +52,7 @@
       disable-user-extensions = false;
       enabled-extensions = [
         "AlphabeticalAppGrid@stuarthayhurst"
-        "panel-corners@aunetx"
-        "rounded-window-corners@yilozt"
+        "blur-my-shell@aunetx"
       ];
     };
     "org/gnome/nautilus/list-view" = {
