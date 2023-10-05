@@ -40,8 +40,8 @@
   nix = {
     gc = {
       automatic = true;
-      dates = "3d";
-      options = "-d";
+      dates = "03:15";
+      options = "-d 3d";
     };
     settings = {
       auto-optimise-store = true;
