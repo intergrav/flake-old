@@ -26,16 +26,6 @@
   networking.networkmanager.enable = true;
   networking.hostName = "devins-nixos-pc";
 
-  # CPU go zoom or something, thanks for this little snippet getchoo :)
-  boot.kernelParams = ["amd_pstate=active"];
-  systemd.tmpfiles.rules = let
-    inherit (builtins // lib) map range toString;
-    nproc = 12;
-    rule = n: "w /sys/devices/system/cpu/cpu${toString n}/cpufreq/energy_performance_preference - - - - ${"balance_performance"}";
-  in
-    map rule (range 0 (nproc - 1));
-  powerManagement.cpuFreqGovernor = "powersave";
-
   # Nix settings - garbage collection, auto optimize store, etc
   nix = {
     gc = {

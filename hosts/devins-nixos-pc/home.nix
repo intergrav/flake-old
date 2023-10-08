@@ -32,7 +32,7 @@
     vlc
     spotify
     prismlauncher
-    go
+    packwiz
     gnomeExtensions.alphabetical-app-grid
     gnomeExtensions.blur-my-shell
     inter
