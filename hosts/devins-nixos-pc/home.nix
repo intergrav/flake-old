@@ -67,10 +67,6 @@
       power-button-action = "interactive";
       sleeping-inactive-ac-type = "nothing";
     };
-    "org/gnome/desktop/background" = {
-      picture-uri = "https://raw.githubusercontent.com/NixOS/nixos-artwork/master/wallpapers/nix-wallpaper-nineish.src.svg";
-      picture-uri-dark = "https://raw.githubusercontent.com/NixOS/nixos-artwork/master/wallpapers/nix-wallpaper-nineish-dark-gray.svg";
-    };
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
       enable-hot-corners = false;
