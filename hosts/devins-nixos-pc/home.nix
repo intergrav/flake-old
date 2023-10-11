@@ -29,6 +29,7 @@
     (discord.override {
       withVencord = true;
     })
+    webcord-vencord
     vlc
     spotify
     prismlauncher
