@@ -35,7 +35,6 @@
     prismlauncher
     packwiz
     gnomeExtensions.alphabetical-app-grid
-    gnomeExtensions.blur-my-shell
     inter
   ];
 
@@ -53,7 +52,6 @@
       disable-user-extensions = false;
       enabled-extensions = [
         "AlphabeticalAppGrid@stuarthayhurst"
-        "blur-my-shell@aunetx"
       ];
     };
     "org/gnome/nautilus/list-view" = {
