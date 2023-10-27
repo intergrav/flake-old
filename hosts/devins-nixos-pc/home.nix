@@ -25,10 +25,7 @@
     firefox
     obsidian
     easyeffects
-    (discord.override {
-      withVencord = true;
-    })
-    webcord-vencord
+    discord
     vlc
     spotify
     prismlauncher
