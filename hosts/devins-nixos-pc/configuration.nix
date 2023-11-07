@@ -23,6 +23,9 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.plymouth.enable = true;
 
+  # Latest kernel
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
   # Networking
   networking.networkmanager.enable = true;
   networking.hostName = "devins-nixos-pc";
