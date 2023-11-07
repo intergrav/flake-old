@@ -25,7 +25,7 @@
     firefox
     obsidian
     easyeffects
-    discord
+    vesktop
     vlc
     spotify
     prismlauncher
@@ -41,7 +41,6 @@
         "org.gnome.Console.desktop"
         "org.gnome.Nautilus.desktop"
         "firefox.desktop"
-        "discord.desktop"
         "spotify.desktop"
         "code.desktop"
       ];
