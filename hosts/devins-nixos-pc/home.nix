@@ -10,7 +10,6 @@
 
   # List of packages to install for me
   home.packages = with pkgs; [
-    nano
     gh
     just
     gnumake
