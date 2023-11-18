@@ -104,7 +104,6 @@
       blur = false;
     };
     "org/gnome/shell/extensions/pop-shell" = {
-      gap-outer = 0;
       stacking-with-mouse = false;
     };
   };
