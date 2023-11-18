@@ -1,21 +1,5 @@
 {
   "nodes": {
-    "firefox-gnome-theme": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1699621711,
-        "narHash": "sha256-GUvBQbagF/7W1AriPVvJYA1cmk9Y/iWXghj3cIFYQzU=",
-        "owner": "rafaelmardojai",
-        "repo": "firefox-gnome-theme",
-        "rev": "1c32013cdbe17406de496cdf5f6899b84c4bbfed",
-        "type": "github"
-      },
-      "original": {
-        "owner": "rafaelmardojai",
-        "repo": "firefox-gnome-theme",
-        "type": "github"
-      }
-    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -54,7 +38,6 @@
     },
     "root": {
       "inputs": {
-        "firefox-gnome-theme": "firefox-gnome-theme",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs"
       }

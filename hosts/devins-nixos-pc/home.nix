@@ -108,17 +108,6 @@
     };
   };
 
-  # Add Firefox GNOME theme
-  home.file.".mozilla/firefox/do016t03.default/chrome".source = inputs.firefox-gnome-theme;
-
-  programs.firefox.profiles."do016t03.default" = {
-    settings = {
-      "toolkit.legacyUserProfileCustomizations.stylesheets" = true; # Enable customChrome.cs
-      "browser.uidensity" = 0; # Set UI density to normal
-      "svg.context-properties.content.enabled" = true; # Enable SVG context-propertes
-    };
-  };
-
   # GTK settings
   gtk.enable = true;
   gtk.theme = {
