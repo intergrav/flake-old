@@ -30,6 +30,8 @@
     prismlauncher
     packwiz
     gnomeExtensions.alphabetical-app-grid
+    gnomeExtensions.dash-to-dock
+    gnomeExtensions.search-light
     inter
   ];
 
@@ -46,6 +48,8 @@
       disable-user-extensions = false;
       enabled-extensions = [
         "AlphabeticalAppGrid@stuarthayhurst"
+        "dash-to-dock@micxgx.gmail.com"
+        "search-light@icedman.github.com"
       ];
     };
     "org/gnome/nautilus/list-view" = {
@@ -78,6 +82,17 @@
     "org/gtk/settings/file-chooser" = {
       clock-format = "12h";
       sort-directories-first = true;
+    };
+    "org/gnome/shell/extensions/dash-to-dock" = {
+      extend-height = true;
+      dash-max-icon-size = 32;
+      dock-position = "LEFT";
+      custom-background-color = true;
+      dock-fixed = true;
+    };
+    "org/gnome/shell/extensions/search-light" = {
+      border-radius = 3.36;
+      border-thickness = 1;
     };
   };
 
