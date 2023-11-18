@@ -33,6 +33,7 @@
     gnomeExtensions.dash-to-dock
     gnomeExtensions.search-light
     gnomeExtensions.blur-my-shell
+    gnomeExtensions.rounded-window-corners
     inter
   ];
 
@@ -51,6 +52,8 @@
         "AlphabeticalAppGrid@stuarthayhurst"
         "dash-to-dock@micxgx.gmail.com"
         "search-light@icedman.github.com"
+        "blur-my-shell@aunetx"
+        "rounded-window-corners@yilozt"
       ];
     };
     "org/gnome/nautilus/list-view" = {
