@@ -27,8 +27,10 @@
     vesktop
     vlc
     spotify
+    steam
     prismlauncher
     packwiz
+    gnomeExtensions.appindicator
     gnomeExtensions.alphabetical-app-grid
     gnomeExtensions.pop-shell
     gnomeExtensions.dash-to-dock
@@ -48,9 +50,11 @@
         "firefox.desktop"
         "spotify.desktop"
         "code.desktop"
+        "steam.desktop"
       ];
       disable-user-extensions = false;
       enabled-extensions = [
+        "appindicatorsupport@rgcjonas.gmail.com"
         "AlphabeticalAppGrid@stuarthayhurst"
         "pop-shell@system76.com"
         "dash-to-dock@micxgx.gmail.com"
