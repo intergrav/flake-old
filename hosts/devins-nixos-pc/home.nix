@@ -95,7 +95,7 @@
       dock-fixed = true;
     };
     "org/gnome/shell/extensions/search-light" = {
-      border-radius = 3.36;
+      border-radius = 3.5;
       border-thickness = 1;
     };
     "org/gnome/shell/extensions/blur-my-shell/applications" = {
