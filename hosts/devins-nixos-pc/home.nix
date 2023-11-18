@@ -32,6 +32,7 @@
     gnomeExtensions.alphabetical-app-grid
     gnomeExtensions.dash-to-dock
     gnomeExtensions.search-light
+    gnomeExtensions.blur-my-shell
     inter
   ];
 
@@ -93,6 +94,9 @@
     "org/gnome/shell/extensions/search-light" = {
       border-radius = 3.36;
       border-thickness = 1;
+    };
+    "org/gnome/shell/extensions/blur-my-shell/applications" = {
+      blur = false;
     };
   };
 
