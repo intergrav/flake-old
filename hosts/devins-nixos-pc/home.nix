@@ -30,6 +30,7 @@
     prismlauncher
     packwiz
     gnomeExtensions.alphabetical-app-grid
+    gnomeExtensions.pop-shell
     gnomeExtensions.dash-to-dock
     gnomeExtensions.search-light
     gnomeExtensions.blur-my-shell
@@ -50,6 +51,7 @@
       disable-user-extensions = false;
       enabled-extensions = [
         "AlphabeticalAppGrid@stuarthayhurst"
+        "pop-shell@system76.com"
         "dash-to-dock@micxgx.gmail.com"
         "search-light@icedman.github.com"
         "blur-my-shell@aunetx"
