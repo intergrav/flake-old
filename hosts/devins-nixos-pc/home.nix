@@ -32,6 +32,7 @@
     gnomeExtensions.alphabetical-app-grid
     gnomeExtensions.pop-shell
     gnomeExtensions.dash-to-dock
+    gnomeExtensions.vitals
     gnomeExtensions.search-light
     gnomeExtensions.blur-my-shell
     gnomeExtensions.rounded-window-corners
@@ -53,6 +54,7 @@
         "AlphabeticalAppGrid@stuarthayhurst"
         "pop-shell@system76.com"
         "dash-to-dock@micxgx.gmail.com"
+        "Vitals@CoreCoding.com"
         "search-light@icedman.github.com"
         "blur-my-shell@aunetx"
         "rounded-window-corners@yilozt"
