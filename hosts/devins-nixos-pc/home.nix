@@ -103,6 +103,10 @@
     "org/gnome/shell/extensions/blur-my-shell/applications" = {
       blur = false;
     };
+    "org/gnome/shell/extensions/pop-shell" = {
+      gap-outer = 0;
+      stacking-with-mouse = false;
+    };
   };
 
   # GTK settings
