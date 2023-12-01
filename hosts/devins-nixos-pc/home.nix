@@ -33,11 +33,6 @@
     gnomeExtensions.appindicator
     gnomeExtensions.alphabetical-app-grid
     gnomeExtensions.pop-shell
-    gnomeExtensions.dash-to-dock
-    gnomeExtensions.vitals
-    gnomeExtensions.search-light
-    gnomeExtensions.blur-my-shell
-    gnomeExtensions.rounded-window-corners
     inter
   ];
 
@@ -57,11 +52,6 @@
         "appindicatorsupport@rgcjonas.gmail.com"
         "AlphabeticalAppGrid@stuarthayhurst"
         "pop-shell@system76.com"
-        "dash-to-dock@micxgx.gmail.com"
-        "Vitals@CoreCoding.com"
-        "search-light@icedman.github.com"
-        "blur-my-shell@aunetx"
-        "rounded-window-corners@yilozt"
       ];
     };
     "org/gnome/nautilus/list-view" = {
@@ -94,20 +84,6 @@
     "org/gtk/settings/file-chooser" = {
       clock-format = "12h";
       sort-directories-first = true;
-    };
-    "org/gnome/shell/extensions/dash-to-dock" = {
-      extend-height = true;
-      dash-max-icon-size = 32;
-      dock-position = "LEFT";
-      custom-background-color = true;
-      dock-fixed = true;
-    };
-    "org/gnome/shell/extensions/search-light" = {
-      border-radius = 3.5;
-      border-thickness = 1;
-    };
-    "org/gnome/shell/extensions/blur-my-shell/applications" = {
-      blur = false;
     };
     "org/gnome/shell/extensions/pop-shell" = {
       stacking-with-mouse = false;
