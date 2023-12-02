@@ -92,6 +92,9 @@
     pulse.enable = true;
   };
 
+  # Enable flatpak
+  services.flatpak.enable = true;
+
   # Define a user account
   users.users.devin = {
     isNormalUser = true;
