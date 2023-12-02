@@ -33,6 +33,7 @@
     qt6Packages.qtstyleplugin-kvantum
     gnomeExtensions.appindicator
     gnomeExtensions.alphabetical-app-grid
+    gnomeExtensions.rounded-window-corners
     gnomeExtensions.pop-shell
     inter
   ];
@@ -52,6 +53,7 @@
       enabled-extensions = [
         "appindicatorsupport@rgcjonas.gmail.com"
         "AlphabeticalAppGrid@stuarthayhurst"
+        "rounded-window-corners@yilozt.shell-extension"
         "pop-shell@system76.com"
       ];
     };
