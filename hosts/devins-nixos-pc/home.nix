@@ -21,7 +21,6 @@
       ];
     })
     alejandra
-    firefox
     obsidian
     easyeffects
     vesktop
@@ -30,6 +29,8 @@
     steam
     prismlauncher
     packwiz
+    libsForQt5.qtstyleplugin-kvantum
+    qt6Packages.qtstyleplugin-kvantum
     gnomeExtensions.appindicator
     gnomeExtensions.alphabetical-app-grid
     gnomeExtensions.pop-shell
@@ -76,6 +77,9 @@
       remove-old-trash-files = true;
       old-files-age = 2;
     };
+    "org/gnome/desktop/wm/preferences" = {
+      titlebar-font = "Cantarell 11";
+    };
     "org/gnome/mutter" = {
       edge-tiling = true;
       dynamic-workspaces = true;
@@ -102,6 +106,27 @@
     enable = true;
     userName = "intergrav";
     userEmail = "intergrav@proton.me";
+  };
+
+  # Firefox GNOME theme
+  home.file.".mozilla/firefox/do016t03.default/chrome/firefox-gnome-theme".source = inputs.firefox-gnome-theme;
+
+  programs.firefox = {
+    enable = true;
+    profiles."do016t03.default" = {
+      userChrome = ''
+        @import "firefox-gnome-theme/userChrome.css";
+      '';
+      userContent = ''
+        @import "firefox-gnome-theme/userContent.css";
+      '';
+      settings = {
+        "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+        "browser.uidensity" = 0;
+        "svg.context-properties.content.enabled" = true;
+        "browser.theme.dark-private-windows" = false;
+      };
+    };
   };
 
   # Home Manager release version

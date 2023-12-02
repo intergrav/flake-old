@@ -52,29 +52,16 @@
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
   environment.gnome.excludePackages = with pkgs; [
-    gnome-photos
     gnome-tour
     gnome.yelp
-    gnome.cheese
-    gnome.gedit
     gnome.epiphany
-    gnome.geary
-    gnome.evince
-    gnome.gnome-characters
-    gnome.totem
-    gnome.tali
-    gnome.iagno
-    gnome.hitori
-    gnome.atomix
-    gnome.gnome-contacts
-    gnome.gnome-maps
-    gnome.gnome-calendar
   ];
 
   # Fix multi-monitor refresh rates with X11
   environment.sessionVariables = {
     __GL_SYNC_DISPLAY_DEVICE = "DP-0";
     NIXOS_OZONE_WL = "1";
+    QT_STYLE_OVERRIDE = "kvantum";
   };
 
   # OpenGL and NVIDIA settings
