@@ -15,7 +15,7 @@
     gnumake
     (vscode-with-extensions.override {
       vscodeExtensions = with vscode-extensions; [
-        vscode-extensions.catppuccin.catppuccin-vsc
+        piousdeer.adwaita-theme
         bbenoist.nix
         kamadorueda.alejandra
       ];
