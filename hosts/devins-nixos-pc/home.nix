@@ -28,6 +28,7 @@
     spotify
     steam
     prismlauncher
+    r2modman
     packwiz
     libsForQt5.qtstyleplugin-kvantum
     qt6Packages.qtstyleplugin-kvantum
