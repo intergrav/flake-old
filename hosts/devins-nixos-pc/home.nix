@@ -27,7 +27,7 @@
     vlc
     spotify
     steam
-    prismlauncher
+    prismlauncher-qt5
     r2modman
     packwiz
     libsForQt5.qtstyleplugin-kvantum
