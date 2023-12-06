@@ -23,9 +23,7 @@
     alejandra
     obsidian
     easyeffects
-    vesktop
     vlc
-    spotify
     steam
     prismlauncher-qt5
     r2modman
@@ -36,7 +34,6 @@
     gnomeExtensions.alphabetical-app-grid
     gnomeExtensions.rounded-window-corners
     gnomeExtensions.pop-shell
-    inter
   ];
 
   # GNOME shell and extension settings
