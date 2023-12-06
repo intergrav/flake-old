@@ -43,7 +43,6 @@
         "org.gnome.Console.desktop"
         "org.gnome.Nautilus.desktop"
         "firefox.desktop"
-        "spotify.desktop"
         "code.desktop"
         "steam.desktop"
       ];
