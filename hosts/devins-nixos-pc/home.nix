@@ -91,6 +91,10 @@
     "org/gnome/shell/extensions/pop-shell" = {
       stacking-with-mouse = false;
     };
+    "org/virt-manager/virt-manager/connections" = {
+      autoconnect = ["qemu:///system"];
+      uris = ["qemu:///system"];
+    };
   };
 
   # GTK settings

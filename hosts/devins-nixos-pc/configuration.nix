@@ -78,6 +78,10 @@
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
+  # Virtualization
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
+
   # CUPS for printing
   services.printing.enable = true;
 
@@ -98,7 +102,7 @@
   # Define a user account
   users.users.devin = {
     isNormalUser = true;
-    extraGroups = ["networkmanager" "wheel"];
+    extraGroups = ["networkmanager" "wheel" "libvirtd"];
   };
 
   # Allow unfree packages
