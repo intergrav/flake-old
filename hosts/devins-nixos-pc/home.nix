@@ -25,6 +25,7 @@
     easyeffects
     vlc
     steam
+    obs-studio
     prismlauncher-qt5
     r2modman
     packwiz
